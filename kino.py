@@ -85,7 +85,7 @@ filma44 = Filma("Savvaļas karalis", 1130, 144, 7, 1)
 seansi_uz_kuriem_tiek = []
 
 for filma in Filma.visas_filmas:
-    if filma.min_vec <= 12: # vini nevar iet uz filmam kuras nav vini vecumam
+    if filma.min_vec <= 15: # vini nevar iet uz filmam kuras nav vini vecumam
         if filma.name != "Pokemons" and filma.day != 7: # Elvis šādos apstaklos netiek vai negrib
             beigu_laiks = filma.start_time + filma.run_time
             if beigu_laiks < 1320: # pec 22:00 (1320 minutes) vecaki nebrauks pakaļ
